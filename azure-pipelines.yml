@@ -19,8 +19,9 @@ steps:
 - script: apt install git
   displayName: 'Run a multi-line script'
 
+jobs:
 
-tasks:
+- tasks:
   git:
       repo: 'https://github.com/IWantSome314/AutoPass'
       dest: '/home/debian/repos/'
