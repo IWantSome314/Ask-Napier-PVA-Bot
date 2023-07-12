@@ -17,11 +17,14 @@ steps:
   displayName: 'Install pip'
 - script: mkdir AutoPW
   displayName: 'Making AutoPW folder'
+- script:  cd AutoPW
 #Installing git
 - script: sudo apt-get install -y git
+- script: echo "before cloneing git" | pwd
   displayName: 'Install git'
 - script: git clone https://github.com/IWantSome314/AutoPass
   displayName: 'Clone Github repo'
+- script: echo "After cloneing git" | pwd
 #- script: chmod +x Run_Script.py
 #  displayName: 'Make the script runable'
 - script: ./Run_Script.py
