@@ -10,11 +10,12 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+- script: sudo apt update
+  displayName: 'Update'
+- script: sudo apt -y upgrade
+  displayName: 
+- script: sudo apt install -y python3-pip
+  displayName: 'Install pip'
 
 - script: sudo apt-get install git
   displayName: 'Run a multi-line script'
-
-- script: sudo apt-get install python
-  displayName: 'Installing python'
