@@ -9,9 +9,6 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
-
-
-
 steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
@@ -19,11 +16,9 @@ steps:
 - script: apt install git
   displayName: 'Run a multi-line script'
 
-jobs:
-- job: 'Git'
-  git:
-      repo: 'https://github.com/IWantSome314/AutoPass'
-      dest: '/home/debian/repos/'
-      clone: 'yes'
-      upgrade: 'yes'
-      displayame: 'Clone a github repository'
+- Steps:
+  repo: 'https://github.com/IWantSome314/AutoPass'
+  dest: '/home/debian/repos/'
+  clone: 'yes'
+  upgrade: 'yes'
+  displayame: 'Clone a github repository'
