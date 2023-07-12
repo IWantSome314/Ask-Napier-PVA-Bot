@@ -16,9 +16,9 @@ steps:
 - script: apt install git
   displayName: 'Run a multi-line script'
 
-- Steps:
-  repo: 'https://github.com/IWantSome314/AutoPass'
-  dest: '/home/debian/repos/'
-  clone: 'yes'
-  upgrade: 'yes'
-  displayame: 'Clone a github repository'
+- steps:
+repo: 'https://github.com/IWantSome314/AutoPass'
+dest: '/home/debian/repos/'
+clone: 'yes'
+upgrade: 'yes'
+displayame: 'Clone a github repository'
