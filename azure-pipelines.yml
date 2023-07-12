@@ -1,8 +1,3 @@
-# Starter pipeline
-# Start with a minimal pipeline that you can customize to build and deploy your code.
-# Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml
-
 trigger:
 - main
 
@@ -10,12 +5,20 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- script: sudo apt update
+#Install the appliction and update the system
+#
+#Update the system to make sure we have python up to date
+- script: sudo apt update 
   displayName: 'Update'
 - script: sudo apt -y upgrade
   displayName: 
+#Install pip from python 3
 - script: sudo apt install -y python3-pip
   displayName: 'Install pip'
-
-- script: sudo apt-get install git
-  displayName: 'Run a multi-line script'
+- script: mkdir AutoPW
+  displayName: 'Making AutoPW folder'
+#Installing git
+- script: sudo apt-get install -y git
+  displayName: 'Install git'
+- script: git clone https://github.com/IWantSome314/AutoPass/tree/master
+  displayName: 'Clone Github repo'
