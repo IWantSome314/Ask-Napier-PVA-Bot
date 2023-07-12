@@ -10,14 +10,11 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- script: sudo su
-  displayName: "Sudo"
-
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
-- script: apt-get install git
+- script: sudo apt-get install git
   displayName: 'Run a multi-line script'
 
-- script: apt-get install python
+- script: sudo apt-get install python
   displayName: 'Installing python'
