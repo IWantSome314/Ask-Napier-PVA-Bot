@@ -20,10 +20,10 @@ steps:
   displayName: 'Run a multi-line script'
 
 
-- task:
+tasks:
   git:
       repo: 'https://github.com/IWantSome314/AutoPass'
-      dest: /home/debian/repos/
+      dest: '/home/debian/repos/'
       clone: 'yes'
       upgrade: 'yes'
       displayame: 'Clone a github repository'
