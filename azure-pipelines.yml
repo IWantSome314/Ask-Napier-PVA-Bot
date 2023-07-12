@@ -20,8 +20,7 @@ steps:
   displayName: 'Run a multi-line script'
 
 jobs:
-
-- tasks:
+- job: 'Git'
   git:
       repo: 'https://github.com/IWantSome314/AutoPass'
       dest: '/home/debian/repos/'
