@@ -10,6 +10,9 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
+- script: sudo su
+  displayName: "Sudo"
+
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
