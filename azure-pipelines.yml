@@ -13,8 +13,8 @@ steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
-- script: apt install git
+- script: apt-get install git
   displayName: 'Run a multi-line script'
 
-- script: apt intall python
+- script: apt-get install python
   displayName: 'Installing python'
