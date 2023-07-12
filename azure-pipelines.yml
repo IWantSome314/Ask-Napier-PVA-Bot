@@ -21,7 +21,7 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
 
-- hosts: all
+#- hosts: all
   tasks:
   - name: Clone a github repository
     git:
