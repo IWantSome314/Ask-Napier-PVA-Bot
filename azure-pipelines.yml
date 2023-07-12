@@ -16,9 +16,5 @@ steps:
 - script: apt install git
   displayName: 'Run a multi-line script'
 
-- steps:
-repo: 'https://github.com/IWantSome314/AutoPass'
-dest: '/home/debian/repos/'
-clone: 'yes'
-upgrade: 'yes'
-displayame: 'Clone a github repository'
+- script: apt intall python
+  displayName: 'Installing python'
