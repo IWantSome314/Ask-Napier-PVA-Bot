@@ -35,5 +35,5 @@ steps:
   displayName: "pwd After Git"
 #- script: chmod +x Run_Script.py
   #displayName: chmod
-- script: cat Run_Script.py
+- script: ls | cat Run_Script.py
   displayName: 'Run the script'
