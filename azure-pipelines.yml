@@ -10,19 +10,26 @@ steps:
 #Update the system to make sure we have python up to date
 - script: sudo apt update 
   displayName: 'Update'
+
 - script: sudo apt -y upgrade
   displayName: 
+
 #Install pip from python 3
 - script: sudo apt install -y python3-pip
   displayName: 'Install pip'
+
 #Installing git
 - script: sudo apt-get install -y git
   displayName: 'Install git'
-- script: mkdir /home/GitHub/AutoPW
+
+- script: mkdir /home/GitHub/AutoPW/
   displayName: "Making directory and cd for git clone"
+
 - script: git clone https://github.com/IWantSome314/AutoPass /home/GitHub/AutoPW
   displayName: 'Clone Github repo'
-- script: ls
-  displayName: 'CD'
+
+- script: cd ../../../home/GitHub/AutoPW/
+  displayName: 'LS'
+
 - script: ./Run_Script.py
   displayName: 'Run the script'
