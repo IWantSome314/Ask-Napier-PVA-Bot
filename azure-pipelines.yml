@@ -12,7 +12,7 @@ steps:
   displayName: 'Update'
 
 - script: sudo apt -y upgrade
-  displayName: 
+  displayName: 'Update'
 
 #Install pip from python 3
 - script: sudo apt install -y python3-pip
@@ -22,8 +22,8 @@ steps:
 - script: sudo apt-get install -y git
   displayName: 'Install git'
 
-- script: pwd
-  displayName: "pwd"
+- script: pwd | cd /home/GitHub/AutoPW | pwd | ls
+  displayName: "pwd Before Git"
 
 #- script: git clone https://github.com/IWantSome314/AutoPass
 - script: git init
@@ -31,8 +31,8 @@ steps:
   displayName: 'Merge'
 - script: sudo git clone https://github.com/IWantSome314/AutoPass
   displayName: 'Clone Github repo'
-- script: pwd | cd /home/GitHub/AutoPW | pwd
-  displayName: "pwd"
+- script: pwd | cd /home/GitHub/AutoPW | pwd | ls
+  displayName: "pwd After Git"
 
 - script: ./Run_Script.py
   displayName: 'Run the script'
