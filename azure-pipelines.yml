@@ -25,7 +25,7 @@ steps:
 - script: pwd
   displayName: "pwd"
 
-- script: git remote -v origin  https://github.com/IWantSome314/AutoPass
+- script: git remote -v master  https://github.com/IWantSome314/AutoPass
 - script: git init
 - script: git config pull.rebase false
   displayName: 'Merge'
