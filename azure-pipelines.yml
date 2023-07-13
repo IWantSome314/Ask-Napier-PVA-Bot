@@ -22,7 +22,7 @@ steps:
 - script: sudo apt-get install -y git
   displayName: 'Install git'
 
-- script: mkdir ../../../..//home/GitHub/AutoPW/
+- script: mkdir ../../../../home/GitHub/AutoPW/
   displayName: "Making directory"
 
 - script: git clone https://github.com/IWantSome314/AutoPass /home/GitHub/AutoPW
