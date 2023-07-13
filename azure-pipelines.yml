@@ -28,7 +28,7 @@ steps:
 #- script: cd ../../../../home/GitHub/AutoPW/
  # displayName: 'LS'
 
-- script: git clone https://github.com/IWantSome314/AutoPass /home/GitHub/AutoPW
+- script: sudo git clone https://github.com/IWantSome314/AutoPass /home/GitHub/AutoPW
   displayName: 'Clone Github repo'
 
 - script: pwd
