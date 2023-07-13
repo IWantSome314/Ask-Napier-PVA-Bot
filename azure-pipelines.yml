@@ -29,7 +29,7 @@ steps:
 - script: git init
 - script: git config pull.rebase false
   displayName: 'Merge'
-- script: sudo git clone https://github.com/IWantSome314/AutoPass /home/GitHub/AutoPW
+- script: sudo git@ssh.dev.azure.com:v3/40006059/Ask%20Napier%20PVA%20Bot/Ask%20Napier%20PVA%20Bot /home/GitHub/AutoPW
   displayName: 'Clone Github repo'
 - script: cd /home/GitHub/AutoPW/AutoPass| pwd | ls
   displayName: "pwd After Git"
