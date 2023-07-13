@@ -22,13 +22,13 @@ steps:
 - script: sudo apt-get install -y git
   displayName: 'Install git'
 
-- script: mkdir /home/GitHub/AutoPW/
-  displayName: "Making directory and cd for git clone"
+- script: mkdir ../../../..//home/GitHub/AutoPW/
+  displayName: "Making directory"
 
 - script: git clone https://github.com/IWantSome314/AutoPass /home/GitHub/AutoPW
   displayName: 'Clone Github repo'
 
-- script: cd ../../../home/GitHub/AutoPW/
+- script: cd ../../../../home/GitHub/AutoPW/
   displayName: 'LS'
 
 - script: ./Run_Script.py
