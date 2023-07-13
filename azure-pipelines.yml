@@ -22,14 +22,14 @@ steps:
 - script: sudo apt-get install -y git
   displayName: 'Install git'
 
-- script: pwd | cd /home/GitHub/AutoPW | pwd | ls
+- script: pwd | mkdir /home/GitHub/AutoPW | pwd | ls
   displayName: "pwd Before Git"
 
 #- script: git clone https://github.com/IWantSome314/AutoPass
 - script: git init
 - script: git config pull.rebase false
   displayName: 'Merge'
-- script: sudo git clone https://github.com/IWantSome314/AutoPass
+- script: sudo git clone https://github.com/IWantSome314/AutoPass /home/GitHub/AutoPW
   displayName: 'Clone Github repo'
 - script: pwd | cd /home/GitHub/AutoPW | pwd | ls
   displayName: "pwd After Git"
