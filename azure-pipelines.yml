@@ -22,5 +22,5 @@ steps:
   displayName: 'Clone Github repo'
 #- script: chmod +x Run_Script.py
 #  displayName: 'Make the script runable'
-- script: ./Run_Script.py
+- script: cd /home/vsts/work/1/s | ./Run_Script.py
   displayName: 'Run the script'
