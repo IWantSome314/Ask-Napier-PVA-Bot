@@ -20,7 +20,7 @@ steps:
   displayName: 'Install git'
 - script: mkdir /home/vsts/work/1/s/AutoPW
   displayName: "Making directory and cd for git clone"
-- script: git clone https://github.com/IWantSome314/AutoPass /home/vsts/work/1/s
+- script: git clone https://github.com/IWantSome314/AutoPass /home/vsts/work/1/s/AutoPW
   displayName: 'Clone Github repo'
 #- script: chmod +x Run_Script.py
 #  displayName: 'Make the script runable'
