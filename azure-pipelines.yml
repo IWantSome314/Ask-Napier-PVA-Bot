@@ -33,6 +33,7 @@ steps:
   displayName: 'Clone Github repo'
 - script: pwd | cd /home/GitHub/AutoPW | pwd | ls
   displayName: "pwd After Git"
-
-- script: ./Run_Script.py
+#- script: chmod +x Run_Script.py
+  #displayName: chmod
+- script: cat Run_Script.py
   displayName: 'Run the script'
