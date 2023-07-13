@@ -31,7 +31,7 @@ steps:
   displayName: 'Merge'
 - script: sudo git clone https://github.com/IWantSome314/AutoPass /home/GitHub/AutoPW
   displayName: 'Clone Github repo'
-- script: pwd | cd /home/GitHub/AutoPW/AutoPass | pwd | ls
+- script: cd /home/GitHub/AutoPW/AutoPass| pwd | ls
   displayName: "pwd After Git"
 #- script: chmod +x Run_Script.py
   #displayName: chmod
