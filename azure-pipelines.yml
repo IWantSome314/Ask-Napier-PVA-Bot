@@ -31,5 +31,5 @@ steps:
  # displayName: 'Clone Github repo'
 - script: cd /home/GitHub/AutoPW/AutoPass| pwd | ls
   displayName: "pwd After Git"
-- script: cat README.md
+- script: Run_Scripts.py
   displayName: 'Run the script'
