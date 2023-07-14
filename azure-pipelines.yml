@@ -1,3 +1,4 @@
+#14/07/23
 trigger:
 - main
 
@@ -19,8 +20,8 @@ steps:
   displayName: 'Install pip'
 
 #Install Subprocess from pip
-- script: pip install subprocess
-  displayName: Installing Subprocess for python
+#- script: pip install subprocess
+#  displayName: Installing Subprocess for python
 
 #Installing git
 - script: sudo apt-get install -y git
