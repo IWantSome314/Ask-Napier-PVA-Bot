@@ -23,15 +23,15 @@ steps:
   displayName: 'Install git'
 #- script: cd /home/vsts/work/1/s
 
-- script: sudo git clone https://github.com/IWantSome314/Ask-Napier-PVA-Bot /Ask-Napier-PVA-Bot/
+- script: sudo git clone https://github.com/IWantSome314/Ask-Napier-PVA-Bot/home/GitHub/AutoPW/AutoPass
   displayName: 'Git Clone'
 
-- script: find . -type f -name "Run_Script*"
+- script: find . -iname "Run_Script*"
   displayName: "ls"
 
-#- script: cd /Ask-Napier-PVA-Bot/
+- script: cd /home/GitHub/AutoPW/AutoPass
 
 - script: ls | pwd
 
-- script: sudo ./Run_Scripts.py
+- script: sudo cat README.md
   displayName: 'Run the script'
