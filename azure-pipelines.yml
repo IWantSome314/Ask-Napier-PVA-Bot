@@ -27,7 +27,7 @@ steps:
 
 #- script: git clone https://github.com/IWantSome314/AutoPass
 - script: git remote add https://github.com/IWantSome314/AutoPass
-- script: sudo git pull https://github.com/IWantSome314/AutoPass /home/GitHub/AutoPW
+- script: sudo git pull
   displayName: 'Clone Github repo'
 - script: cd /home/GitHub/AutoPW/AutoPass| pwd | ls
   displayName: "pwd After Git"
