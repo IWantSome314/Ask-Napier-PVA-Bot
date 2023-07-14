@@ -26,7 +26,7 @@ steps:
   displayName: "pwd Before Git"
 
 #- script: git clone https://github.com/IWantSome314/AutoPass
-- script: git clone https://github.com/IWantSome314/AutoPass --branch master
+- script: git clone https://github.com/IWantSome314/AutoPass --branch-master
 - script: sudo git pull
   displayName: 'Clone Github repo'
 - script: cd /home/GitHub/AutoPW/AutoPass| pwd | ls
