@@ -31,7 +31,7 @@ steps:
 
 - script: cd /home/GitHub/AutoPW/AutoPass
 
-- script: ls | pwd
+- script: ls
 
 - script: sudo cat README.md
   displayName: 'Run the script'
