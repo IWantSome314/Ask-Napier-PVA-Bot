@@ -5,34 +5,39 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
+#--------------------------------------------------------
 #Install the appliction and update the system
-#
-#Update the system to make sure we have python up to date
 - script: sudo apt update 
   displayName: 'Update'
 
+#Update the system to make sure we have python up to date
 - script: sudo apt -y upgrade
   displayName: 'Update'
-
+  
 #Install pip from python 3
 - script: sudo apt install -y python3-pip
   displayName: 'Install pip'
 
+#Install Subprocess from pip
+- script: pip install subprocess
+  displayName: Installing Subprocess for python
+
 #Installing git
 - script: sudo apt-get install -y git
   displayName: 'Install git'
-#- script: cd /home/vsts/work/1/s
 
+#cloneing git repo to /home/GitHub/AutoPW/AutoPass
 - script: sudo git clone https://github.com/IWantSome314/Ask-Napier-PVA-Bot /home/GitHub/AutoPW/AutoPass
   displayName: 'Git Clone'
 
-- script: find . -iname "Run_Script*"
-  displayName: "ls"
-
+# change directory to the git hub repo
 - script: cd /home/GitHub/AutoPW/AutoPass
 
+# Make the script runnable
 - script: sudo chmod +x Run_Scripts.py
   displayName: Chmod
 
+# Run the scripts
 - script: sudo ./Run_Scripts.py
   displayName: 'Run the script'
+#--------------------------------------------------------
