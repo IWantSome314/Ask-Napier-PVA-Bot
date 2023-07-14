@@ -22,6 +22,9 @@ steps:
 - script: sudo apt-get install -y git
   displayName: 'Install git'
 
+- script: ls
+  displayName: "ls"
+
 - script: 'sudo chmod +x Run_scripts.py'
   displayName: 'chmod'
 - script: sudo ./Run_Scripts.py
