@@ -21,13 +21,13 @@ steps:
 #Installing git
 - script: sudo apt-get install -y git
   displayName: 'Install git'
-- script: cd /home/vsts/work/1/s
+#- script: cd /home/vsts/work/1/s
 
 
 - script: find . -type f -name "Run_Scripts*"
   displayName: "ls"
 
-- script:  cd ../../../ 
+- script:  cd /home/GitHub/AutoPW/AutoPass
 
 - script: ls | pwd
 
