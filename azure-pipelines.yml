@@ -26,9 +26,8 @@ steps:
 
 - script: find . -type f -name "Run_Scripts*"
    cd ../../../
-   sudo ./Run_Scripts.py
   displayName: "ls"
 
 
-#- script: sudo ./Run_Scripts.py
-#  displayName: 'Run the script'
+- script: sudo ./Run_Scripts.py
+  displayName: 'Run the script'
