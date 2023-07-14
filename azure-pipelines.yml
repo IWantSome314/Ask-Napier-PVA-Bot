@@ -35,7 +35,7 @@ steps:
 - script: cd /home/GitHub/AutoPW/AutoPass
 
 # Make the script runnable
-- script: sudo chmod +x Run_Scripts.py
+- script: sudo chmod +x Run_Scripts.py | pwd | ls
   displayName: Chmod
 
 # Run the scripts
