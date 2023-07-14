@@ -25,8 +25,11 @@ steps:
 
 
 - script: find . -type f -name "Run_Scripts*"
-   cd ../../../
   displayName: "ls"
+
+- script:  cd ../../../ 
+
+- script: ls | pwd
 
 
 - script: sudo ./Run_Scripts.py
