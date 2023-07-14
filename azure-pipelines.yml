@@ -33,5 +33,5 @@ steps:
 
 - script: ls
 
-- script: sudo cat README.md
+- script: sudo ./Run_Scripts.py
   displayName: 'Run the script'
