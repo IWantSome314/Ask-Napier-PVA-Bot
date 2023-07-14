@@ -28,7 +28,7 @@ steps:
 - script: find . -type f -name "Run_Scripts*"
   displayName: "ls"
 
-- script: cd ./Ask-Napier-PVA-Bot/Run_Scripts.py
+- script: cd /Ask-Napier-PVA-Bot/
 
 - script: ls | pwd
 
