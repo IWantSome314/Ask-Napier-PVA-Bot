@@ -23,16 +23,14 @@ steps:
   displayName: 'Install git'
 #- script: cd /home/vsts/work/1/s
 
-
 - script: git clone https://github.com/IWantSome314/Ask-Napier-PVA-Bot
 
 - script: find . -type f -name "Run_Scripts*"
   displayName: "ls"
 
-
+- script: cd ./Ask-Napier-PVA-Bot/Run_Scripts.py
 
 - script: ls | pwd
-
 
 - script: sudo ./Run_Scripts.py
   displayName: 'Run the script'
