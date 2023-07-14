@@ -22,13 +22,13 @@ steps:
 - script: sudo apt-get install -y git
   displayName: 'Install git'
 
-- script: mkdir /home/GitHub/AutoPW | pwd | ls
+- script: mkdir /home/GitHub| pwd | ls
   displayName: "pwd Before Git"
 
 #- script: git clone https://github.com/IWantSome314/AutoPass
 - script: git remote add origin https://github.com/IWantSome314/AutoPass
-- script: sudo git pull
-  displayName: 'Clone Github repo'
+#- script: sudo git pull
+ # displayName: 'Clone Github repo'
 - script: cd /home/GitHub/AutoPW/AutoPass| pwd | ls
   displayName: "pwd After Git"
 - script: cat README.md
