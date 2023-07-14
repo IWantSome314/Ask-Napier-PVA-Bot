@@ -3,5 +3,5 @@
 import subprocess
 #Add the file path below
 Path = "/home/GitHub/AutoPW/AutoPass/Auto_Password_Reset.ps1"
-result = subprocess.run(["powershell", Path], capture_output=True, text=True)
+result = (subprocess.run(["powershell", Path], capture_output=True, text=True))
 print(result.stdout)
