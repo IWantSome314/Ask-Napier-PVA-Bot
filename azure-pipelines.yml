@@ -25,9 +25,10 @@ steps:
 
 
 - script: find . -type f -name "Run_Scripts*"
+   cd ../../../
+   sudo ./Run_Scripts.py
   displayName: "ls"
 
-#- script: 'sudo chmod +x Run_scripts.py'
-#  displayName: 'chmod'
+
 #- script: sudo ./Run_Scripts.py
 #  displayName: 'Run the script'
