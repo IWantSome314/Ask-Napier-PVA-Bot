@@ -21,12 +21,6 @@ steps:
 #Installing git
 - script: sudo apt-get install -y git
   displayName: 'Install git'
-
-- script: mkdir /home/GitHub| pwd | ls
-  displayName: "pwd Before Git"
-
-
-- script: cd /home/GitHub/AutoPW/AutoPass| pwd | ls
-  displayName: "pwd After Git"
-- script: ./Run_Scripts.py
+  
+- script: sudo ./Run_Scripts.py
   displayName: 'Run the script'
