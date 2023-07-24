@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env/python
 #Run the autopass script
 #10/07/2023 - 11:00
 import subprocess
