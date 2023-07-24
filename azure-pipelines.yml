@@ -39,6 +39,6 @@ steps:
   displayName: Chmod
 
 # Run the scripts
-- script: sudo ./Run_Scripts.py
+- script: sudo /home/GitHub/AutoPW/AutoPass/Run_Scripts.py
   displayName: 'Run the script'
 #--------------------------------------------------------
