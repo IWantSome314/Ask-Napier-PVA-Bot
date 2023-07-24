@@ -1,5 +1,5 @@
 #Run the autopass script
-#14/07/2023 - 16:00
+#24/07/2023 - 9:40
 import subprocess
 #Add the file path below
 Path = "/home/GitHub/AutoPW/AutoPass/Auto_Password_Reset.ps1"
