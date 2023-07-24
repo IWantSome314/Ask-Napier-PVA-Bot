@@ -1,6 +1,6 @@
-#!/usr/bin/env/python
+#!/usr/bin/env/python3
 #Run the autopass script
-#10/07/2023 - 11:00
+#10/07/2023 - 11:03
 import subprocess
 #Add the file path below
 Path = "C:/Users/Hamish/Desktop/PVAAuto/Auto_Password_Reset.ps1"
