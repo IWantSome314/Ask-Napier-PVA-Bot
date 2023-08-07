@@ -16,7 +16,7 @@ Write-Output "Object ID: $id"
 
 # Replace <user_object_id> with the Object ID obtained in the previous step.
 # Replace <user_object_id> with the Object ID obtained earlier.
-$user_object_id = $id
+#$user_object_id = $id
 
 # Define the JSON payload for strongAuthenticationRequirements
 $jsonPayload = @'
