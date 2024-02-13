@@ -11,7 +11,7 @@ Write-Output "Received email: $email"
 Write-Output "Email variable: $email"
 
 # Login to Azure
-az login -u 40017606a@6bspgh.onmicrosoft.com -p CityGround2023 --allow-no-subscription
+az login -u $email -p $password --allow-no-subscription
 
 # Get the user information using the az ad user show command
 #$user = az ad user show --upn $email
